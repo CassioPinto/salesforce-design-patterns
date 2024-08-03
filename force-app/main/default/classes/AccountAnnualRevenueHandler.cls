@@ -1,17 +1,17 @@
-public without sharing class AccountAnnualRevenueHandler extends BaseAccountDataHandler
-{
-    public override Account handle(Account account)
-    {
-        if (account.AnnualRevenue > 100000)
-        {
+public without sharing class AccountAnnualRevenueHandler extends BaseAccountDataHandler {
+
+    public override Account handle(Account account) {
+
+        if (account.AnnualRevenue > 100000) {
+
             account.Rating = 'Hot';
-        }
-        else if (account.AnnualRevenue > 50000)
-        {
+
+        } else if (account.AnnualRevenue > 50000) {
+
             account.Rating = 'Warm';
-        }
-        else
-        {
+
+        } else {
+            
             account.Rating = 'Cold';
         }
 
