@@ -1,6 +1,6 @@
 public without sharing virtual class BaseOpportunityDataHandler {
 
-    BaseOpportunityDataHandler nextHandler;
+    private BaseOpportunityDataHandler nextHandler;
 
     public BaseOpportunityDataHandler setNextHandler(BaseOpportunityDataHandler handler) {
         this.nextHandler = handler;
