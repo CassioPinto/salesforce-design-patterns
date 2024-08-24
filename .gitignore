@@ -9,7 +9,7 @@
 deploy-options.json
 
 # Scripts
-*.apex
+scripts/apex
 
 # LWC VSCode autocomplete
 **/lwc/jsconfig.json
