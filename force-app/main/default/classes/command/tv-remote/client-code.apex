@@ -5,8 +5,10 @@ TurnOffCommand offCommand = new TurnOffCommand(tv);
 
 TVRemote remote = new TVRemote();
 
-remote.setCommand(onCommand);
-remote.pressButton();
+remote.addCommand('on', onCommand);
+remote.addCommand('off', offCommand);
 
-remote.setCommand(offCommand);
-remote.pressButton();
+remote.pressButton('on');
+remote.pressButton('off');
+
+remote.getHistory();
