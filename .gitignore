@@ -8,6 +8,10 @@
 .localdevserver/
 deploy-options.json
 
+# Other
+manifest
+codealike.json
+
 # Scripts
 scripts/apex
 
